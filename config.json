@@ -1,0 +1,37 @@
+
+{
+    "train_features": [
+
+        {
+          "features": ["pt", "eta", "GN2v00_pu_1", "GN2v00_pc_1", "GN2v00_pb_1", "GN2v00_pu_2", "GN2v00_pc_2", "GN2v00_pb_2", "GN2v00_pu_3", "GN2v00_pc_3", "GN2v00_pb_3"],
+          "model_name": "Xbbscore_GN2"
+        },
+        {
+          "features": ["pt", "eta", "GN2v00_pu_1", "GN2v00_pc_1", "GN2v00_pb_1", "GN2v00_pu_2", "GN2v00_pc_2", "GN2v00_pb_2", "GN2v00_pu_3", "GN2v00_pc_3", "GN2v00_pb_3", "jet_color_ring_tt"],
+          "model_name": "Xbbscore_GN2_JCR"
+        },
+        {
+          "features": ["pt", "eta", "GN2v00_pu_1", "GN2v00_pc_1", "GN2v00_pb_1", "GN2v00_pu_2", "GN2v00_pc_2", "GN2v00_pb_2", "GN2v00_pu_3", "GN2v00_pc_3", "GN2v00_pb_3", "jet_color_ring_tt_l"],
+          "model_name": "Xbbscore_GN2_JCR_l"
+        }
+      ]      
+      ,
+    "sample_name": "May19_tt",
+    "train_data_path": "/lstore/calo/martafsilva/Xbb/Jet_color_ring/May19_Analysis/JCR_dataframes_May19/df_JCR_tt_train_chunk_0_19999999.h5",
+    "val_data_path": "/lstore/calo/martafsilva/Xbb/Jet_color_ring/May19_Analysis/JCR_dataframes_May19/df_JCR_tt_val.h5",
+    "test_data_path": "/lstore/calo/martafsilva/Xbb/Jet_color_ring/May19_Analysis/JCR_dataframes_May19/df_JCR_tt_test.h5",
+    "model_params": {
+      "dense_units": 250,
+      "num_classes": 4,
+      "activation": "relu",
+      "batch_normalization": true
+    },
+    "training_params": {
+      "optimizer": "SGD",
+      "learning_rate": 0.01,
+      "decay": 1e-5,
+      "batch_size": 10000,
+      "epochs": 200
+    }
+  }
+  
